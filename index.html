@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER DASHBOARD</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>My Dashboard </h1></header>
+    <section class="body">
+        <div class="account">
+            <form action="#weather">
+                <label for="">Enter a City Name</label>
+                <input type="text" placeholder="E.g, Karachi , Lahore , Hyderabad" required>
+                <button id="search">Search</button>
+                <div class="span">————————— <span>or</span> —————————</div>
+                <button class="use">Use current location</button>
+            </form>
+        </div>
+        <div class="weather" id="weather">
+            <div class="karachi">
+                <h1>KARACHI (31/8/24)</h1>
+                <p>Temperature : 15.5 <sup>o</sup>C</p>
+                <p>Wind : 4.31 M/S</p>
+                <p>Humidity 76%</p>
+                <figure><span>🌦️</span><figcaption>Moderate Rain</figcaption></figure>
+            </div>
+            <div class="forecast">
+                <h1>4-Day Forecast</h1>
+                <div class="cards">
+                    <div class="card">
+                        <h1>(1/9/2024)</h1>
+                        <span>⛅</span>
+                        <p>Temp : 17.64 <sup>o</sup>C</p>
+                        <p>Wind : 0.73 M/S</p>
+                        <p>Humidity 70%</p>
+                    </div>
+                    <div class="card">
+                        <h1>(2/9/2024)</h1>
+                        <span>☀️</span>
+                        <p>Temp : 16.78 <sup>o</sup>C</p>
+                        <p>Wind : 2.72 M/S</p>
+                        <p>Humidity 83%</p>
+                    </div>
+                    <div class="card">
+                        <h1>(3/9/2024)</h1>
+                        <span>🌩️</span>
+                        <p>Temp : 18.20 <sup>o</sup>C</p>
+                        <p>Wind : 1.49 M/S</p>
+                        <p>Humidity 72%</p>
+                    </div>
+                    <div class="card">
+                        <h1>(4/9/2024)</h1>
+                        <span>🌦️</span>
+                        <p>Temp : 17.08 <sup>o</sup>C</p>
+                        <p>Wind : 0.9 M/S</p>
+                        <p>Humidity 89%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>This Weather Dashboard is made by &nbsp; <a href="https://github.com/DeveloperInsharah"> @Insharah Irfan</a></footer>
+</body>
+</html>

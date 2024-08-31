@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    color: white;
+    background-color: rgb(9, 116, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(228, 240, 255);
+    overflow-x:hidden;
+}
+.body>.account{
+    width: 35%;
+    height: 70%;
+}
+.body>.weather{
+    width: 65%;
+    height: 100%;
+}
+.body>.account label{
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-top: 8% !important;
+    display: block;
+    font-weight: 600;
+}
+.body>.account input{
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-top: 2% !important;
+    display: block;
+    height: 7vh;
+    width: 80%;
+    padding-left: 5%;
+    color: rgb(0, 0, 0);
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid grey;
+}
+.account input:focus{
+    outline: 3px solid rgb(111, 173, 255);
+}
+#search{
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 7vh;
+    background-color: rgb(9, 116, 255);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+#search:hover{
+    background-color: rgb(1, 101, 233);
+    cursor: pointer;
+}
+.account .span{
+    display: block;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-transform: uppercase;
+    color: gray;
+}
+.use{
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 80%;
+    height: 7vh;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: grey;
+    font-size: 1.1rem;
+    color: white;
+}
+.use:hover{
+    cursor: pointer;
+    background-color: rgb(100, 100, 100);
+}
+.karachi{
+    width: 90%;
+    height: 32vh;
+    border-radius: 8px;
+    background-color: rgb(9, 116, 255);
+    margin-top: 4%;
+    margin-left: 1%;
+    padding-left: 3%;
+    padding-top: 2%;
+    color: white;
+}
+.karachi h1{
+    letter-spacing: 2px;
+}
+.karachi p{
+    margin: 2% 0%;
+    font-size: 1.1rem;
+}
+.karachi figure{
+    float : right;
+    font-size: 5rem;
+    margin-top: -18%;
+    margin-right: 5%;
+}
+.karachi figcaption{
+    font-size: 0.9rem;
+    margin-top: 2%;
+}
+.forecast{
+    width: 90%;
+    margin-left: 1%;
+    margin-top: 2%;
+    height: 53%;
+}
+.cards{
+    width: 100%;
+    margin-top: 2%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: 23%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: grey;
+    color: white;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+.card h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 3%;
+}
+.card span{
+    font-size: 2.5rem;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.card p{
+    margin-top: 7%;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 10px rgb(224, 224, 224);
+    transform: scale(1.02);
+}
+.karachi:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 1px 1px 10px 10px rgb(185, 215, 255);
+}
+footer{
+    width: 100%;
+    height: 7vh;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media (max-width:430px) {
+    header{width: 100%; } 
+    .body{
+        width: 100%;
+        height: 1100px !important;
+    }
+    .body .account{
+        display: block;
+        width: 100%;
+        padding-left: 7%;
+    }
+    .account form input{
+        height: 5vh !important;
+    }
+    .account button{
+        height: 5vh !important;
+    }
+    .account span{
+        font-size: 0.8rem;
+    }
+    .account{
+        border-bottom: 1px solid rgb(190, 190, 190);
+        height: 310px !important;
+    }
+    .weather{
+        width: 100% !important;
+        margin-top: 2%;
+        height: 730px !important;
+    }
+    .karachi{
+        height: 180px;
+        width: 95%;
+        margin: auto;
+        margin-top: 5% !important;
+    }
+    figure{
+        margin-top: -30% !important;
+    }
+    .karachi h1{
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+    .forecast h1{
+        margin-top: 5%;
+        margin-left: 3%;
+        margin-bottom: 5%;
+    }
+    .forecast .cards{
+        width: 100%;
+        margin-left: 3% !important;
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .card{
+        width: 43% !important;
+        height: 200px !important;
+        margin: 3% 3% !important;
+        padding-left: 4%;
+    }
+    footer{
+        font-size: 0.9rem;
+    }
+}
